@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -79,7 +79,7 @@
       transform: translate3d(0, 0, 0);
     }
 
-    &:nth-child(1) > a {
+    &.current > a {
       color: $secondary-color;
     }
   }
@@ -97,7 +97,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300px;
-    color: white;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
@@ -108,7 +108,7 @@
 
   // BRANDING SIDE
   &-branding {
-    background: $primary-color;
+    background: darken($primary-color, 2);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
