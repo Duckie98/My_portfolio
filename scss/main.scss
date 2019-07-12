@@ -23,7 +23,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 400px;
 
   &.lg-heading {
     font-size: 6rem; // 1 rem = 1 * current font-size
@@ -78,6 +78,7 @@ main {
   }
 }
 
+// About page
 .about-info {
   font-size: 2rem;
   display: grid;
@@ -117,8 +118,20 @@ main {
 
   .job {
     background: lighten($primary-color, 5);
-    padding: 0.5rem;
+    padding: 1rem;
     border-bottom: $secondary-color 5px solid;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+
+    ul li:before {
+      content: "✓ ";
+    }
   }
 }
 
